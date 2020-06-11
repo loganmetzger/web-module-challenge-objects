@@ -69,9 +69,15 @@ console.log(reviews[5].feedback);
 
 /* Task 5: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
-reviews.
+reviews.push({
+  name: "Logan", rating: 5, feedback: "*Chef's Kiss*"
+})
+
+// console.log(reviews[reviews.length - 1])
 
 /* Task 6: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
+
+
 
 /*  Task 7: Write a function to return a review based on the index of the review in the array.
 
