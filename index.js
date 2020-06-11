@@ -211,8 +211,7 @@ function carMaker(miles) {
     odometer: miles, 
 
     drive: function(distance) {
-      car.odometer = car.odometer + distance;
-      return odometer;
+      this.odometer = this.odometer + distance;
     }
   
   }
@@ -224,4 +223,4 @@ function carMaker(miles) {
 
 carMaker(10000);
 
-carMaker.drive(600);
+carMaker(10000).drive(600);
