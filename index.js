@@ -84,7 +84,7 @@ console.log(reviews[5].feedback);
 /* Task 5: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
 reviews.push({
-  name: "Logan", rating: 5, feedback: "*Chef's Kiss*"
+  name: "Logan", rating: 5, feedback: "*Chef's Kiss*, I loved the Bertie Bots Beans for dessert"
 })
 
 // console.log(reviews[reviews.length - 1])
@@ -109,7 +109,7 @@ and should return a string in the format `{name} gave the restaurant a {rating},
 */
 function getReviewByIndex(reviews, index) {
 
-  return (`${reviews[index].name} gave the restaurant a ${reviews[index].rating}, and their feedback was: ${reviews[index].feedback}`);
+  return `${reviews[index].name} gave the restaurant a ${reviews[index].rating}, and their feedback was: ${reviews[index].feedback}`;
 
 }
 
@@ -122,9 +122,12 @@ and should return a string in the format `name} gave the restaurant a {rating}, 
 
 For example, if getLastReview is invoked passing the reviews array it will return `Reyna gave the restaurant a 3.5 star review and their feedback was: "this place is chill with really cool people, great for getting work done on weekdays"`.
 */
-function getLastReview(/* code here */) {
-    /* code here */
-  } 
+function getLastReview(reviews) {
+
+
+  return`${reviews[reviews.length -1].name} gave the restaurant a ${reviews[reviews.length -1].rating}, and their feedback was: ${reviews[reviews.length -1].feedback}`
+  
+} 
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
