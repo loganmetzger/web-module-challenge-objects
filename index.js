@@ -205,7 +205,23 @@ The returned object should have the following characteristics:
 */
 
 
-function carMaker(/* code here */) {
-    /* code here */
+function carMaker(miles) {
+
+  let car = {
+    odometer: miles, 
+
+    drive: function(distance) {
+      car.odometer = car.odometer + distance;
+      return odometer;
+    }
+  
+  }
+
+  console.log(car);
+  return car;
     
 }
+
+carMaker(10000);
+
+carMaker.drive(600);
