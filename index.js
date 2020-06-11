@@ -42,14 +42,28 @@ and should return a number.
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
 burger.discount = function(profession) {
-  if (profession = 'teacher' || 'student') {
-    burger.price = burger.price * 0.75;
-    return burger.price;
-  } else {
-    burger.price = burger.price * 0.9;
-    return burger.price;
+  // if (profession === 'teacher' || 'student') {
+  //   burger.price = burger.price * 0.75;
+  //   return burger.price;
+  // } else {
+  //   burger.price = burger.price * 0.9;
+  //   return burger.price;
+  // }
+
+  switch(profession){
+    case 'teacher':
+      burger.price = burger.price * 0.75;
+      return burger.price;
+    case 'student':
+      burger.price = burger.price * 0.75;
+      return burger.price;
+    case 'public':
+      burger.price = burger.price * 0.9;
+      return burger.price;
   }
 }
+
+console.log(burger.discount('public'));
 
 ///////////////Reviews (MVP)///////////////////
 
@@ -94,9 +108,10 @@ and should return a string in the format `{name} gave the restaurant a {rating},
  * it will return `Daniela gave the restaurant a 5 star review and their feedback was: Beautiful atmosphere and wonderful vegan options!`
 */
 function getReviewByIndex(reviews, index) {
-    /* code here */
-  }
-  
+
+  return (`${reviews[index].name} gave the restaurant a ${reviews[index].rating}, and their feedback was: ${reviews[index].feedback}`);
+
+}
 
 /* Task 8: Write a function to get information about the most recent review called `getLastReview`
 
