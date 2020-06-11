@@ -41,8 +41,14 @@ and should return a number.
 
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
-burger.discount() = {
-  
+burger.discount = function(profession) {
+  if (profession = 'teacher' || 'student') {
+    burger.price = burger.price * 0.75;
+    return burger.price;
+  } else {
+    burger.price = burger.price * 0.9;
+    return burger.price;
+  }
 }
 
 ///////////////Reviews (MVP)///////////////////
